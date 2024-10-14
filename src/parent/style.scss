@@ -1,0 +1,95 @@
+@media screen and (max-width: 782px) {
+  .formo-recipes-page-hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    box-sizing: content-box;
+
+    & .formo-recipes-page-hero-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+      padding-top: var(--wp--custom--height--navbar);
+    }
+  
+    & .formo-recipes-page-hero__spacer__top,
+    & .formo-recipes-page-hero__spacer__bottom {
+      margin: 0;
+    }
+    & .formo-recipes-page-hero__headline {
+      position: relative;
+      top: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-size: 12.5vw;
+      padding: 0 var(--wp--custom--spacing--outer);
+      color: var(--wp--preset--color--formo-blue);
+    }
+  }
+}
+
+@media screen and (min-width: 782.1px) {
+  .formo-recipes-page-hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 8;
+    overflow: hidden;
+    margin-top: var(--wp--custom--height--navbar);
+    box-sizing: content-box;
+  
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      margin-left: var(--wp--custom--spacing--outer);
+      width: var(--wp--custom--width--col-9);
+      height: 100%;
+      box-sizing: border-box;
+      border-right: 1px solid var(--wp--preset--color--formo-cream);
+    }
+
+    & .formo-recipes-page-hero-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-top: var(--wp--custom--height--navbar);
+    }
+  
+    & .formo-recipes-page-hero__spacer__top,
+    & .formo-recipes-page-hero__spacer__bottom {
+      border-right: 1px solid var(--wp--preset--color--formo-cream);
+      margin: 0 0 0 var(--wp--custom--spacing--outer);
+      width: var(--wp--custom--width--col-3);
+      flex: 1 1 20%;
+      z-index: 1;
+    }
+    & .formo-recipes-page-hero__spacer__bottom {
+      flex: 1 1 100%;
+    }
+    & .formo-recipes-page-hero__headline {
+      position: relative;
+      top: 0;
+      margin: 0;
+      padding-right: 2em;
+      box-sizing: border-box;
+      font-size: var(--wp--preset--font-size--xxxx-large);
+      left: var(--wp--custom--spacing--outer);
+      width: var(--wp--custom--width--col-9);
+      color: var(--wp--preset--color--formo-blue);
+    }
+  }
+}

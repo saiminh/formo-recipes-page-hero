@@ -1,0 +1,142 @@
+@media screen and (max-width: 782px) {
+  .formo-recipe-page-header-dynamic-images {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background-color: var(--wp--preset--color--formo-darktone);
+  }
+  .formo-recipe-page-header-dynamic-images__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &[data-showing='false'] {
+      animation: recipefadeOut 1s ease-out forwards;
+    }
+    &[data-showing='true'] {
+      animation: recipefadeIn 1s ease-out forwards;
+    }
+  }
+  @keyframes recipefadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes recipefadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .formo-recipe-page-header-dynamic-images-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    padding: 2rem;
+    z-index: 2;
+    box-sizing: border-box;
+  }
+  .formo-recipe-page-header-dynamic-images-nav__button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--wp--preset--color--formo-cream);
+    background: transparent;
+    cursor: pointer;
+
+    &[data-active='true'] {
+      background-color: var(--wp--preset--color--formo-cream);
+    }
+  }
+}
+@media screen and (min-width: 782.1px) {
+  .formo-recipe-page-header-dynamic-images {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 8;
+    overflow: hidden;
+    background-color: var(--wp--preset--color--formo-darktone);
+  }
+  .formo-recipe-page-header-dynamic-images__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &[data-showing='false'] {
+      animation: recipefadeOut 1s ease-out forwards;
+    }
+    &[data-showing='true'] {
+      animation: recipefadeIn 1s ease-out forwards;
+    }
+  }
+  @keyframes recipefadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes recipefadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .formo-recipe-page-header-dynamic-images-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    padding: 3rem;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+  .formo-recipe-page-header-dynamic-images-nav__button {
+    width: 2.34vw;
+    height: 2.34vw;
+    border-radius: 50%;
+    border: 1px solid var(--wp--preset--color--formo-cream);
+    background: transparent;
+    cursor: pointer;
+
+    &[data-active='true'] {
+      background-color: var(--wp--preset--color--formo-cream);
+    }
+  }
+}
