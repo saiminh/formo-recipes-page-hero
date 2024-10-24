@@ -30,6 +30,7 @@ function render_recipe_dynamicImages_block($attributes) {
   $args = array(
     'post_type' => 'formo2022_recipe',
     'posts_per_page' => 4,
+    'orderby' => 'rand',
   );
 
   $query = new WP_Query($args);
